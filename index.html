@@ -1,0 +1,394 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lanta Racing · Agustín Lantaron</title>
+<meta name="description" content="Lanta Racing. Preparación, restauración y alta performance para empresarios y coleccionistas. Agustín Lantaron, piloto y mecánico.">
+<meta property="og:title" content="Lanta Racing · Agustín Lantaron">
+<meta property="og:description" content="Preparación, restauración y alta performance para empresarios y coleccionistas.">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#060908">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,wght@0,400;0,500;1,400;1,500&family=Archivo:wght@400;500;600&display=swap">
+<style>
+body{margin:0;background:#060908}
+html{scroll-behavior:smooth}
+a{color:#ECE8DF}a:hover{color:#C8B17A}
+input::placeholder,textarea::placeholder{color:#8C9389}
+input:focus,textarea:focus{outline:0;border-bottom-color:#C8B17A}
+.lr-card{transition:background .5s ease,border-color .5s ease,transform .6s cubic-bezier(.2,.7,.1,1)}
+.lr-card:hover{background:rgba(200,177,122,0.07);border-color:rgba(200,177,122,0.7);transform:translateY(-6px)}
+.lr-btn{position:relative;display:inline-flex;align-items:center;gap:16px;padding:19px 32px;font-size:13px;font-weight:600;letter-spacing:.16em;text-transform:uppercase;text-decoration:none;color:#0A0F0C;background:linear-gradient(135deg,#EFE2BC 0%,#C8B17A 46%,#9F8750 100%);box-shadow:inset 0 1px 0 rgba(255,255,255,.5),inset 0 -1px 0 rgba(0,0,0,.25),0 14px 34px -14px rgba(200,177,122,.6);overflow:hidden;transition:transform .4s cubic-bezier(.2,.7,.1,1),box-shadow .4s ease}
+.lr-btn::after{content:"";position:absolute;top:0;bottom:0;left:-70%;width:45%;background:linear-gradient(100deg,rgba(255,255,255,0),rgba(255,255,255,.6),rgba(255,255,255,0));transform:skewX(-20deg);transition:left .8s ease}
+.lr-btn:hover{color:#0A0F0C;transform:translateY(-2px);box-shadow:inset 0 1px 0 rgba(255,255,255,.6),inset 0 -1px 0 rgba(0,0,0,.25),0 22px 44px -14px rgba(200,177,122,.75)}
+.lr-btn:hover::after{left:125%}
+.lr-btn svg,.lr-ghost svg{transition:transform .4s cubic-bezier(.2,.7,.1,1)}
+.lr-btn:hover svg,.lr-ghost:hover svg{transform:translateX(6px)}
+.lr-ghost{display:inline-flex;align-items:center;gap:14px;font-size:13px;font-weight:600;letter-spacing:.16em;text-transform:uppercase;text-decoration:none;color:#ECE8DF;border:1px solid rgba(200,177,122,.65);background:linear-gradient(#C8B17A,#C8B17A) no-repeat 0 100%/100% 0;transition:background-size .45s cubic-bezier(.2,.7,.1,1),color .45s ease}
+.lr-ghost:hover{background-size:100% 100%;color:#0A0F0C}
+.lr-s0{background-image:url(assets/s00.webp)}
+.lr-s1{background-image:url(assets/s01.webp)}
+.lr-s2{background-image:url(assets/s02.webp)}
+.lr-s3{background-image:url(assets/s03.webp)}
+.lr-s4{background-image:url(assets/s04.webp)}
+.lr-s5{background-image:url(assets/s05.webp)}
+.lr-s6{background-image:url(assets/s06.webp)}
+.lr-s7{background-image:url(assets/s07.webp)}
+.lr-s8{background-image:url(assets/s08.webp)}
+.lr-s9{background-image:url(assets/s09.webp)}
+.lr-s10{background-image:url(assets/s10.webp)}
+.lr-s11{background-image:url(assets/s11.webp)}
+.lr-s12{background-image:url(assets/s12.webp)}
+.lr-s13{background-image:url(assets/s13.webp)}
+.lr-s14{background-image:url(assets/s14.webp)}
+.lr-s15{background-image:url(assets/s15.webp)}
+.lr-m0{background-image:url(assets/m00.webp)}
+.lr-m1{background-image:url(assets/m01.webp)}
+.lr-m2{background-image:url(assets/m02.webp)}
+.lr-m3{background-image:url(assets/m03.webp)}
+.lr-m4{background-image:url(assets/m04.webp)}
+.lr-m5{background-image:url(assets/m05.webp)}
+.lr-m6{background-image:url(assets/m06.webp)}
+.lr-m7{background-image:url(assets/m07.webp)}
+.lr-m8{background-image:url(assets/m08.webp)}
+.lr-m9{background-image:url(assets/m09.webp)}
+.lr-m10{background-image:url(assets/m10.webp)}
+.lr-m11{background-image:url(assets/m11.webp)}
+.lr-m12{background-image:url(assets/m12.webp)}
+.lr-m13{background-image:url(assets/m13.webp)}
+.lr-m14{background-image:url(assets/m14.webp)}
+.lr-m15{background-image:url(assets/m15.webp)}
+@media (max-width: 720px){.lr-links{display:none!important}}
+@media (prefers-reduced-motion: reduce){*{transition:none!important}}
+</style>
+</head>
+<body>
+<div id="top" style="position: relative; background: #060908; color: #ECE8DF; font-family: 'Archivo', 'Helvetica Neue', Arial, sans-serif; font-size: 16px; line-height: 1.6">
+<div id="lr-bg" aria-hidden="true" style="position: fixed; left: 0; top: -20%; width: 100%; height: 140%; z-index: 0; pointer-events: none; background: radial-gradient(ellipse 55% 40% at 85% 18%, rgba(200,177,122,0.14) 0%, rgba(200,177,122,0) 70%), radial-gradient(ellipse 62% 46% at 6% 60%, rgba(34,64,51,0.9) 0%, rgba(34,64,51,0) 72%), radial-gradient(ellipse 50% 36% at 72% 96%, rgba(200,177,122,0.09) 0%, rgba(200,177,122,0) 70%); will-change: transform"></div>
+<div id="lr-glow" aria-hidden="true" style="position: fixed; left: 0; top: 0; width: 560px; height: 560px; margin: -280px 0 0 -280px; border-radius: 50%; z-index: 0; pointer-events: none; opacity: 0; background: radial-gradient(circle, rgba(200,177,122,0.13) 0%, rgba(200,177,122,0) 65%); transition: opacity 0.8s ease; will-change: transform"></div>
+<div id="lr-top" style="position: fixed; left: 0; right: 0; top: 0; z-index: 5; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 4px 12px; padding: 10px clamp(24px, 5vw, 80px); background: rgba(6,9,8,0.7); backdrop-filter: blur(16px); border-bottom: 1px solid rgba(236,232,223,0.1); opacity: 0; transform: translateY(-100%); transition: opacity 0.5s ease, transform 0.6s cubic-bezier(0.2, 0.7, 0.1, 1); pointer-events: none"><a href="#top" style="display: flex; align-items: baseline; gap: 10px; text-decoration: none"><span style="font-family: 'Bodoni Moda', 'Didot', Georgia, serif; font-size: clamp(19px, 5.4vw, 24px); letter-spacing: 0.2em; font-weight: 500">LANTA</span><span style="font-size: clamp(9px, 2.6vw, 11px); letter-spacing: 0.34em; color: #C8B17A">RACING</span></a> <nav aria-label="Secundaria" style="display: flex; flex-wrap: wrap; align-items: center; gap: 4px 30px; font-size: 14px"><span class="lr-links" style="display: flex; align-items: center; gap: 30px"><a href="#palmares" style="text-decoration: none; padding: 12px 0">Palmarés</a><a href="#agustin" style="text-decoration: none; padding: 12px 0">Agustín Lantaron</a><a href="#prensa" style="text-decoration: none; padding: 12px 0">Prensa</a></span><a class="lr-ghost" href="#contacto" style="padding: 12px 15px">Contacto</a></nav></div>
+<section id="lr-track" style="position: relative; z-index: 2; height: 810px; background: #000000">
+<div id="lr-stage" style="position: sticky; top: 0; height: 810px; overflow: hidden; background: #000000">
+<div id="lr-film" role="img" aria-label="Mercedes-Benz 300 SL que gira y abre sus puertas a medida que se avanza" style="position: absolute; left: 50%; top: 50%; width: 1440px; height: 810px; transform: translate(-50%, -50%)">
+<div id="lr-l0" class="lr-film lr-s0" style="position: absolute; left: 0; top: 0; width: 100%; height: 100%; background-size: 300% 300%; background-position: 0% 0%; background-repeat: no-repeat; z-index: 2"></div>
+<div id="lr-l1" class="lr-film lr-s1" style="position: absolute; left: 0; top: 0; width: 100%; height: 100%; background-size: 300% 300%; background-position: 0% 0%; background-repeat: no-repeat; z-index: 1"></div>
+</div>
+<div aria-hidden="true" style="position: absolute; left: 0; right: 0; top: 0; height: 180px; background: linear-gradient(180deg, rgba(0,0,0,0.78) 0%, rgba(0,0,0,0) 100%)"></div>
+<div aria-hidden="true" style="position: absolute; left: 0; right: 0; bottom: 0; height: 62%; background: linear-gradient(0deg, rgba(0,0,0,0.94) 0%, rgba(0,0,0,0.55) 38%, rgba(0,0,0,0) 100%)"></div>
+<header style="position: absolute; left: 0; right: 0; top: 0; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 8px 12px; padding: 24px clamp(24px, 5vw, 80px)"><a href="#top" style="display: flex; align-items: baseline; gap: 10px; text-decoration: none"><span style="font-family: 'Bodoni Moda', 'Didot', Georgia, serif; font-size: clamp(19px, 5.4vw, 24px); letter-spacing: 0.2em; font-weight: 500">LANTA</span><span style="font-size: clamp(9px, 2.6vw, 11px); letter-spacing: 0.34em; color: #C8B17A">RACING</span></a> <nav aria-label="Principal" style="display: flex; flex-wrap: wrap; align-items: center; gap: 4px 30px; font-size: 14px"><span class="lr-links" style="display: flex; align-items: center; gap: 30px"><a href="#palmares" style="text-decoration: none; padding: 12px 0">Palmarés</a><a href="#agustin" style="text-decoration: none; padding: 12px 0">Agustín Lantaron</a><a href="#prensa" style="text-decoration: none; padding: 12px 0">Prensa</a></span><a class="lr-ghost" href="#contacto" style="padding: 12px 15px">Contacto</a></nav></header>
+<div id="lr-sc0" style="position: absolute; left: clamp(24px, 5vw, 80px); right: clamp(24px, 5vw, 80px); bottom: clamp(36px, 5vw, 72px); max-width: 620px; display: flex; flex-direction: column; align-items: flex-start; gap: 18px; opacity: 1; transform: translateY(0); transition: opacity 0.7s ease, transform 0.9s cubic-bezier(0.2, 0.7, 0.1, 1); pointer-events: auto"><h1 style="margin: 0; font-family: 'Bodoni Moda', 'Didot', Georgia, serif; font-weight: 400; font-size: clamp(38px, 4.4vw, 68px); line-height: 1.02; letter-spacing: -0.01em"><span style="display: block">Prepara como piloto.</span><em style="display: block; font-weight: 400; color: #C8B17A">Corre como mecánico.</em></h1><p style="margin: 0; max-width: 460px; font-size: 18px; color: #D6D2C8">Preparación, restauración y alta performance para empresarios y coleccionistas.</p></div>
+<div id="lr-sc1" style="position: absolute; left: clamp(24px, 5vw, 80px); right: clamp(24px, 5vw, 80px); bottom: clamp(36px, 5vw, 72px); max-width: 620px; display: flex; flex-direction: column; align-items: flex-start; gap: 18px; opacity: 0; transform: translateY(18px); transition: opacity 0.7s ease, transform 0.9s cubic-bezier(0.2, 0.7, 0.1, 1); pointer-events: none"><h2 style="margin: 0; font-family: 'Bodoni Moda', 'Didot', Georgia, serif; font-weight: 400; font-size: clamp(34px, 4vw, 62px); line-height: 1.02; text-wrap: balance">Preparación de competición</h2><p style="margin: 0; max-width: 460px; font-size: 18px; color: #D6D2C8">Prepara los autos y los lleva a la victoria, en regularidad y en resistencia.</p></div>
+<div id="lr-sc2" style="position: absolute; left: clamp(24px, 5vw, 80px); right: clamp(24px, 5vw, 80px); bottom: clamp(36px, 5vw, 72px); max-width: 620px; display: flex; flex-direction: column; align-items: flex-start; gap: 18px; opacity: 0; transform: translateY(18px); transition: opacity 0.7s ease, transform 0.9s cubic-bezier(0.2, 0.7, 0.1, 1); pointer-events: none"><h2 style="margin: 0; font-family: 'Bodoni Moda', 'Didot', Georgia, serif; font-weight: 400; font-size: clamp(34px, 4vw, 62px); line-height: 1.02; text-wrap: balance">Restauración premium</h2><p style="margin: 0; max-width: 460px; font-size: 18px; color: #D6D2C8">Restauraciones para empresarios y coleccionistas que buscan precisión técnica.</p></div>
+<div id="lr-sc3" style="position: absolute; left: clamp(24px, 5vw, 80px); right: clamp(24px, 5vw, 80px); bottom: clamp(36px, 5vw, 72px); max-width: 620px; display: flex; flex-direction: column; align-items: flex-start; gap: 18px; opacity: 0; transform: translateY(18px); transition: opacity 0.7s ease, transform 0.9s cubic-bezier(0.2, 0.7, 0.1, 1); pointer-events: none"><h2 style="margin: 0; font-family: 'Bodoni Moda', 'Didot', Georgia, serif; font-weight: 400; font-size: clamp(34px, 4vw, 62px); line-height: 1.02; text-wrap: balance">Alta performance</h2><p style="margin: 0; max-width: 460px; font-size: 18px; color: #D6D2C8">Desarrollos de alta performance, en un mundo donde el margen de error es nulo.</p></div>
+<div id="lr-sc4" style="position: absolute; left: clamp(24px, 5vw, 80px); right: clamp(24px, 5vw, 80px); bottom: clamp(36px, 5vw, 72px); max-width: 620px; display: flex; flex-direction: column; align-items: flex-start; gap: 18px; opacity: 0; transform: translateY(18px); transition: opacity 0.7s ease, transform 0.9s cubic-bezier(0.2, 0.7, 0.1, 1); pointer-events: none"><h2 style="margin: 0; font-family: 'Bodoni Moda', 'Didot', Georgia, serif; font-weight: 400; font-size: clamp(34px, 4vw, 62px); line-height: 1.02; text-wrap: balance">Asesoramiento</h2><p style="margin: 0; max-width: 460px; font-size: 18px; color: #D6D2C8">Desde Estados Unidos lo consultan por restauraciones premium y proyectos de alta performance.</p></div>
+<div id="lr-sc5" style="position: absolute; left: clamp(24px, 5vw, 80px); right: clamp(24px, 5vw, 80px); bottom: clamp(36px, 5vw, 72px); max-width: 620px; display: flex; flex-direction: column; align-items: flex-start; gap: 18px; opacity: 0; transform: translateY(18px); transition: opacity 0.7s ease, transform 0.9s cubic-bezier(0.2, 0.7, 0.1, 1); pointer-events: none"><h2 style="margin: 0; font-family: 'Bodoni Moda', 'Didot', Georgia, serif; font-weight: 400; font-size: clamp(34px, 4vw, 62px); line-height: 1.02; text-wrap: balance">Más de 200 autos de lujo por mes, <em style="font-weight: 400; color: #C8B17A">bajo estricta confidencialidad.</em></h2><a class="lr-btn" href="#contacto">Contactar<svg aria-hidden="true" width="26" height="10" viewBox="0 0 26 10" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M0 5h24M20 1l4 4-4 4"></path></svg></a></div>
+<div aria-hidden="true" style="position: absolute; right: clamp(24px, 5vw, 80px); top: 50%; width: 1px; height: 180px; margin-top: -90px; background: rgba(236,232,223,0.25)"><div id="lr-bar" style="width: 1px; height: 100%; background: #C8B17A; transform-origin: 50% 0%; transform: scaleY(0)"></div></div>
+<div id="lr-hint" aria-hidden="true" style="position: absolute; right: clamp(24px, 5vw, 80px); bottom: clamp(36px, 5vw, 72px); display: flex; align-items: center; gap: 12px; font-size: 14px; color: #D6D2C8; transition: opacity 0.6s ease">Deslizá<svg width="12" height="26" viewBox="0 0 12 26" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M6 0v24M1 19l5 5 5-5"></path></svg></div>
+</div>
+</section>
+<div aria-hidden="true" style="position: relative; z-index: 1; height: 320px; margin-top: -1px; background: linear-gradient(180deg, #000000 0%, rgba(0,0,0,0.6) 45%, rgba(0,0,0,0) 100%)"></div>
+
+<section aria-label="En cifras" style="position: relative; z-index: 1; margin-top: -120px; padding: 0 clamp(24px, 5vw, 80px) clamp(80px, 10vw, 150px); display: grid; grid-template-columns: repeat(auto-fit, minmax(min(360px, 100%), 1fr)); gap: 40px clamp(40px, 6vw, 112px); align-items: end">
+<div data-lr="1" style="display: flex; flex-direction: column; gap: 10px">
+<div style="font-family: 'Bodoni Moda', 'Didot', Georgia, serif; font-size: clamp(120px, 19vw, 300px); line-height: 0.85; letter-spacing: -0.02em; color: transparent; -webkit-text-stroke: 1.5px #C8B17A">+<span data-lr-count="200">200</span></div>
+<p style="margin: 0; font-size: 18px; color: #C4C8BE">autos de lujo por mes</p>
+</div>
+<div data-lr="1" data-lr-delay="150" style="display: flex; flex-direction: column; gap: 22px; max-width: 560px">
+<p style="margin: 0; font-family: 'Bodoni Moda', 'Didot', Georgia, serif; font-size: clamp(28px, 3vw, 44px); line-height: 1.18; text-wrap: balance">Una estructura propia que trabaja <em style="color: #C8B17A">bajo estándares de estricta confidencialidad.</em></p>
+<p style="margin: 0; font-size: 18px; line-height: 1.65; color: #C4C8BE">Empresarios y coleccionistas de Argentina, Estados Unidos y Europa encuentran en Lanta Racing soluciones de precisión técnica para autos cuyo valor se mide en millones.</p>
+</div>
+</section>
+
+<section aria-label="Marcas" style="position: relative; z-index: 1; padding: clamp(40px, 5vw, 72px) 0; border-top: 1px solid rgba(236,232,223,0.1); border-bottom: 1px solid rgba(236,232,223,0.1); overflow: hidden; display: flex; flex-direction: column; gap: 18px">
+<p data-lr="1" style="margin: 0; padding: 0 clamp(24px, 5vw, 80px); font-size: 16px; color: #A9AEA4">Su efectividad lo acercó a marcas como</p>
+<div data-lr-slide="1" style="display: flex; gap: clamp(32px, 5vw, 88px); width: max-content; padding: 0 clamp(24px, 5vw, 80px); white-space: nowrap; font-family: 'Bodoni Moda', 'Didot', Georgia, serif; font-size: clamp(56px, 9vw, 150px); line-height: 1.05; will-change: transform">
+<span>Ferrari</span><span style="color: transparent; -webkit-text-stroke: 1px rgba(236,232,223,0.7)">Bugatti</span><span>Mercedes-Benz</span><span style="color: transparent; -webkit-text-stroke: 1px rgba(236,232,223,0.7)">Chrysler</span>
+</div>
+</section>
+
+<section id="palmares" style="position: relative; z-index: 1; padding: clamp(80px, 10vw, 152px) clamp(24px, 5vw, 80px); display: grid; grid-template-columns: repeat(auto-fit, minmax(min(380px, 100%), 1fr)); gap: 56px clamp(40px, 6vw, 112px)">
+<div data-lr="1" style="display: flex; flex-direction: column; gap: 24px">
+<h2 style="margin: 0; font-family: 'Bodoni Moda', 'Didot', Georgia, serif; font-weight: 400; font-size: clamp(40px, 5.4vw, 84px); line-height: 1.02; text-wrap: balance">No solo los prepara. <em style="font-weight: 400; color: #C8B17A">Los lleva a la victoria.</em></h2>
+<p style="margin: 0; max-width: 460px; color: #C4C8BE; font-size: 18px">Récord de efectividad en las competencias disputadas, tanto en regularidad como en resistencia.</p>
+<div style="font-family: 'Bodoni Moda', 'Didot', Georgia, serif; font-style: italic; font-size: clamp(96px, 13vw, 200px); line-height: 0.9; color: #C8B17A"><span data-lr-count="100">100</span>%</div>
+</div>
+<div style="display: flex; flex-direction: column; border-top: 1px solid rgba(236,232,223,0.2)">
+<div data-lr="1" data-lr-delay="0" style="display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 6px 24px; padding: 30px 0; border-bottom: 1px solid rgba(236,232,223,0.2)"><div style="display: flex; flex-direction: column; gap: 4px"><span style="font-family: 'Bodoni Moda', 'Didot', Georgia, serif; font-size: clamp(28px, 2.8vw, 40px); line-height: 1.15">1000 Millas Sport</span><span style="font-size: 15px; color: #A9AEA4">Bariloche, Argentina</span></div><span style="font-size: 14px; color: #A9AEA4">[AÑO Y RESULTADO]</span></div>
+<div data-lr="1" data-lr-delay="120" style="display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 6px 24px; padding: 30px 0; border-bottom: 1px solid rgba(236,232,223,0.2)"><div style="display: flex; flex-direction: column; gap: 4px"><span style="font-family: 'Bodoni Moda', 'Didot', Georgia, serif; font-size: clamp(28px, 2.8vw, 40px); line-height: 1.15">Rally de España</span></div><span style="font-size: 14px; color: #A9AEA4">[AÑO Y RESULTADO]</span></div>
+<div data-lr="1" data-lr-delay="240" style="display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 6px 24px; padding: 30px 0; border-bottom: 1px solid rgba(236,232,223,0.2)"><div style="display: flex; flex-direction: column; gap: 4px"><span style="font-family: 'Bodoni Moda', 'Didot', Georgia, serif; font-size: clamp(28px, 2.8vw, 40px); line-height: 1.15">Tour Bugatti</span><span style="font-size: 15px; color: #A9AEA4">Portugal</span></div><span style="font-size: 14px; color: #A9AEA4">[AÑO Y RESULTADO]</span></div>
+<div data-lr="1" data-lr-delay="360" style="display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 6px 24px; padding: 30px 0; border-bottom: 1px solid rgba(236,232,223,0.2)"><div style="display: flex; flex-direction: column; gap: 4px"><span style="font-family: 'Bodoni Moda', 'Didot', Georgia, serif; font-size: clamp(28px, 2.8vw, 40px); line-height: 1.15">Gumball Rally</span></div><span style="font-size: 14px; color: #A9AEA4">[AÑO Y RESULTADO]</span></div>
+</div>
+</section>
+
+<section id="agustin" style="position: relative; z-index: 1; padding: clamp(80px, 10vw, 152px) clamp(24px, 5vw, 80px) clamp(80px, 10vw, 152px) 0; display: flex; flex-wrap: wrap; align-items: center; gap: 40px clamp(24px, 3vw, 56px)">
+<div data-lr="1" style="flex: 1.5 1 440px; min-width: 0; overflow: hidden; aspect-ratio: 16 / 9">
+<img src="assets/agustin.webp" alt="Agustín Lantaron con buzo antiflama y casco en mano, junto a un auto de competición plateado con el número 31" style="display: block; width: 100%; height: 100%; object-fit: cover; filter: saturate(0.74) contrast(1.06) brightness(0.94); will-change: transform">
+</div>
+<div style="flex: 1 1 380px; min-width: 0; padding-left: clamp(24px, 3vw, 48px); box-sizing: border-box; display: flex; flex-direction: column; gap: 28px">
+<h2 data-lr="1" style="margin: 0; font-family: 'Bodoni Moda', 'Didot', Georgia, serif; font-weight: 400; font-size: clamp(48px, 6.4vw, 104px); line-height: 0.98">Agustín <em style="font-weight: 400; color: #C8B17A">Lantaron</em></h2>
+<p data-lr="1" data-lr-delay="100" style="margin: 0; font-family: 'Bodoni Moda', 'Didot', Georgia, serif; font-style: italic; font-size: clamp(22px, 2.2vw, 32px); line-height: 1.35; max-width: 560px">Un auto no se maneja. Se comprende desde sus entrañas.</p>
+<div data-lr="1" data-lr-delay="200" style="display: flex; flex-direction: column; gap: 16px; max-width: 560px; color: #C4C8BE; font-size: 17px">
+<p style="margin: 0">Nació en Martínez. Hijo de Javier Lantaron, se crió entre chasis, herramientas y motores, y desde los 12 años aprendió de él una forma particular de trabajar y de competir.</p>
+<p style="margin: 0">Convirtió ese legado familiar en una marca de exportación. Es piloto y mecánico: prepara los autos y los lleva a la victoria. Hoy lo buscan coleccionistas y marcas de Estados Unidos y Europa.</p>
+</div>
+<div data-lr="1" data-lr-delay="300" style="display: flex; flex-wrap: wrap; align-items: center; gap: 16px 28px; padding-top: 8px">
+<a class="lr-ghost" href="#prensa" style="padding: 17px 28px">Ver notas de prensa<svg aria-hidden="true" width="26" height="10" viewBox="0 0 26 10" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M0 5h24M20 1l4 4-4 4"></path></svg></a>
+<a href="https://www.instagram.com/lanta_racing/" style="font-size: 14px; padding: 12px 0">Instagram @lanta_racing</a>
+</div>
+</div>
+</section>
+
+<section id="prensa" style="position: relative; z-index: 1; padding: clamp(80px, 10vw, 152px) clamp(24px, 5vw, 80px); display: flex; flex-direction: column; gap: 48px">
+<h2 data-lr="1" style="margin: 0; font-family: 'Bodoni Moda', 'Didot', Georgia, serif; font-weight: 400; font-size: clamp(40px, 5.4vw, 84px); line-height: 1.02; text-wrap: balance">En la prensa</h2>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(400px, 100%), 1fr)); gap: 24px">
+<a class="lr-card" data-lr="1" data-lr-delay="0" href="https://www.eldestapeweb.com/motor/automovilismo/agustin-lantaron-el-mecanico-de-martinez-que-conquista-el-mundo-del-lujo-2026124124730" style="display: flex; flex-direction: column; justify-content: space-between; gap: 56px; padding: 40px; border: 1px solid rgba(236,232,223,0.2); background: rgba(236,232,223,0.025); text-decoration: none; min-height: 320px; box-sizing: border-box"><div style="display: flex; justify-content: space-between; flex-wrap: wrap; gap: 8px 24px; font-size: 15px; color: #A9AEA4"><span>El Destape</span><span>24 de enero de 2026</span></div><span style="font-family: 'Bodoni Moda', 'Didot', Georgia, serif; font-size: clamp(26px, 2.6vw, 38px); line-height: 1.2; text-wrap: balance">Agustín Lantaron, el mecánico de Martínez que conquista el mundo del lujo</span><span style="display: flex; align-items: center; gap: 12px; font-size: 13px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: #C8B17A">Leer la nota<svg aria-hidden="true" width="26" height="10" viewBox="0 0 26 10" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M0 5h24M20 1l4 4-4 4"></path></svg></span></a>
+<a class="lr-card" data-lr="1" data-lr-delay="150" href="https://www.carburando.com/notas/la-historia-del-mecanico-argentino-en-el-mundo-de-alta-gama" style="display: flex; flex-direction: column; justify-content: space-between; gap: 56px; padding: 40px; border: 1px solid rgba(236,232,223,0.2); background: rgba(236,232,223,0.025); text-decoration: none; min-height: 320px; box-sizing: border-box"><div style="display: flex; justify-content: space-between; flex-wrap: wrap; gap: 8px 24px; font-size: 15px; color: #A9AEA4"><span>Carburando</span><span>1 de abril de 2026</span></div><span style="font-family: 'Bodoni Moda', 'Didot', Georgia, serif; font-size: clamp(26px, 2.6vw, 38px); line-height: 1.2; text-wrap: balance">La historia del mecánico argentino en el mundo de alta gama</span><span style="display: flex; align-items: center; gap: 12px; font-size: 13px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: #C8B17A">Leer la nota<svg aria-hidden="true" width="26" height="10" viewBox="0 0 26 10" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M0 5h24M20 1l4 4-4 4"></path></svg></span></a>
+</div>
+</section>
+
+<section id="contacto" style="position: relative; z-index: 1; padding: clamp(80px, 10vw, 152px) clamp(24px, 5vw, 80px); display: grid; grid-template-columns: repeat(auto-fit, minmax(min(380px, 100%), 1fr)); gap: 56px clamp(40px, 6vw, 112px); border-top: 1px solid rgba(236,232,223,0.1)">
+<div data-lr="1" style="display: flex; flex-direction: column; gap: 28px">
+<h2 style="margin: 0; font-family: 'Bodoni Moda', 'Didot', Georgia, serif; font-weight: 400; font-size: clamp(40px, 5.4vw, 84px); line-height: 1.02; text-wrap: balance">Contacto</h2>
+<p style="margin: 0; max-width: 440px; color: #C4C8BE; font-size: 18px">Cuéntenos qué auto tiene y qué necesita.</p>
+<dl style="margin: 0; display: flex; flex-direction: column; gap: 18px; padding-top: 12px">
+<div style="display: flex; flex-direction: column; gap: 2px"><dt style="font-size: 14px; color: #A9AEA4">Taller</dt><dd style="margin: 0; font-size: 19px">[DIRECCIÓN]</dd></div>
+<div style="display: flex; flex-direction: column; gap: 2px"><dt style="font-size: 14px; color: #A9AEA4">WhatsApp</dt><dd style="margin: 0; font-size: 19px">[NÚMERO]</dd></div>
+<div style="display: flex; flex-direction: column; gap: 2px"><dt style="font-size: 14px; color: #A9AEA4">Email</dt><dd style="margin: 0; font-size: 19px">[EMAIL]</dd></div>
+</dl>
+</div>
+<form data-lr="1" data-lr-delay="150" style="display: flex; flex-direction: column; gap: 26px">
+<div style="display: flex; flex-direction: column; gap: 6px"><label for="f-nombre" style="font-size: 14px; color: #A9AEA4">Nombre</label><input id="f-nombre" type="text" autocomplete="name" style="height: 54px; padding: 0 2px; background: transparent; border: 0; border-bottom: 1px solid rgba(236,232,223,0.4); color: #ECE8DF; font-family: inherit; font-size: 17px; box-sizing: border-box"></div>
+<div style="display: flex; flex-direction: column; gap: 6px"><label for="f-email" style="font-size: 14px; color: #A9AEA4">Email o teléfono</label><input id="f-email" type="text" autocomplete="email" style="height: 54px; padding: 0 2px; background: transparent; border: 0; border-bottom: 1px solid rgba(236,232,223,0.4); color: #ECE8DF; font-family: inherit; font-size: 17px; box-sizing: border-box"></div>
+<div style="display: flex; flex-direction: column; gap: 6px"><label for="f-auto" style="font-size: 14px; color: #A9AEA4">Vehículo</label><input id="f-auto" type="text" placeholder="Marca, modelo y año" style="height: 54px; padding: 0 2px; background: transparent; border: 0; border-bottom: 1px solid rgba(236,232,223,0.4); color: #ECE8DF; font-family: inherit; font-size: 17px; box-sizing: border-box"></div>
+<div style="display: flex; flex-direction: column; gap: 6px"><label for="f-msg" style="font-size: 14px; color: #A9AEA4">Qué necesita</label><textarea id="f-msg" rows="4" style="padding: 12px 2px; background: transparent; border: 0; border-bottom: 1px solid rgba(236,232,223,0.4); color: #ECE8DF; font-family: inherit; font-size: 17px; line-height: 1.5; resize: vertical; box-sizing: border-box"></textarea></div>
+<button type="button" class="lr-btn" style="align-self: flex-start; border: 0; font-family: inherit; cursor: pointer">Enviar consulta<svg aria-hidden="true" width="26" height="10" viewBox="0 0 26 10" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M0 5h24M20 1l4 4-4 4"></path></svg></button>
+</form>
+</section>
+
+<footer style="position: relative; z-index: 1; border-top: 1px solid rgba(236,232,223,0.1); padding: 44px clamp(24px, 5vw, 80px) 0; display: flex; flex-direction: column; gap: 20px; overflow: hidden">
+<div style="display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px 40px">
+<div style="display: flex; flex-wrap: wrap; gap: 8px 28px; font-size: 14px"><a href="https://www.instagram.com/lanta_racing/" style="padding: 12px 0">Instagram</a><a href="#prensa" style="padding: 12px 0">Prensa</a><a href="#contacto" style="padding: 12px 0">Contacto</a></div>
+<p style="margin: 0; max-width: 620px; font-size: 13px; color: #A9AEA4">© 2026 Lanta Racing. Taller independiente. Las marcas mencionadas pertenecen a sus respectivos titulares. Las imágenes de portada son ilustrativas.</p>
+</div>
+<div aria-hidden="true" data-lr-par="-0.18" style="font-family: 'Bodoni Moda', 'Didot', Georgia, serif; font-weight: 500; font-size: clamp(88px, 23vw, 360px); line-height: 0.78; letter-spacing: 0.04em; text-align: center; white-space: nowrap; color: transparent; -webkit-text-stroke: 1px rgba(200,177,122,0.45); margin-bottom: -0.08em; will-change: transform">LANTA</div>
+</footer>
+</div>
+<script>
+class LantaPage {
+constructor(props) {
+this.props = props || {};
+this.urls = ["assets/s00.webp","assets/s01.webp","assets/s02.webp","assets/s03.webp","assets/s04.webp","assets/s05.webp","assets/s06.webp","assets/s07.webp","assets/s08.webp","assets/s09.webp","assets/s10.webp","assets/s11.webp","assets/s12.webp","assets/s13.webp","assets/s14.webp","assets/s15.webp"];
+this.murls = ["assets/m00.webp","assets/m01.webp","assets/m02.webp","assets/m03.webp","assets/m04.webp","assets/m05.webp","assets/m06.webp","assets/m07.webp","assets/m08.webp","assets/m09.webp","assets/m10.webp","assets/m11.webp","assets/m12.webp","assets/m13.webp","assets/m14.webp","assets/m15.webp"];
+this.set = '';
+this.lockW = -1; this.lockH = -1;
+this.total = 144;
+this.cur = -1;
+this.scene = 0;
+this.active = 0;
+this.sheets = [0, 1];
+this.sp = 0;
+this.sizeKey = '';
+this.raf = null;
+this.fx = false;
+this.mx = -999; this.my = -999;
+var me = this;
+this.move = function (e) { me.mx = e.clientX; me.my = e.clientY; };
+}
+componentDidMount() {
+this.t0 = performance.now();
+document.addEventListener('mousemove', this.move, { passive: true });
+var self = this;
+var loop = function () { self.raf = requestAnimationFrame(loop); try { self.tick(); } catch (err) {} };
+loop();
+}
+componentWillUnmount() { if (this.raf) cancelAnimationFrame(this.raf); }
+tick() {
+var d = document;
+var track = d.getElementById('lr-track');
+var stage = d.getElementById('lr-stage');
+var film = d.getElementById('lr-film');
+if (!track || !stage || !film) return;
+var vw = track.clientWidth || window.innerWidth;
+var ih = window.innerHeight;
+var scrollMode = ih <= 1700;
+if (scrollMode) {
+if (this.lockW === vw && Math.abs(ih - this.lockH) < 170) { ih = this.lockH; } else { this.lockW = vw; this.lockH = ih; }
+}
+var sh = scrollMode ? ih : Math.round(Math.min(900, Math.max(560, vw * 0.5625)));
+var th = scrollMode ? sh * 6 : sh;
+var key = vw + 'x' + sh + 'x' + th;
+if (key !== this.sizeKey) {
+this.sizeKey = key;
+stage.style.height = sh + 'px';
+track.style.height = th + 'px';
+var wide = !scrollMode || vw / sh >= 1.15;
+var fw, fh;
+if (wide) {
+var sc = Math.max(vw / 1280, sh / 720);
+fw = Math.round(1280 * sc); fh = Math.round(720 * sc);
+} else {
+fw = Math.round(vw * 1.06); fh = Math.round(fw * 1.25);
+}
+film.style.width = fw + 'px';
+film.style.height = fh + 'px';
+film.style.top = wide ? '50%' : '42%';
+var hintEl = d.getElementById('lr-hint');
+if (hintEl) hintEl.style.display = wide ? 'flex' : 'none';
+var set = wide ? 's' : 'm';
+if (set !== this.set) {
+this.set = set;
+this.cur = -1;
+this.sheets = [-1, -1];
+this.keep = (set === 'm' ? this.murls : this.urls).map(function (u) { var im = new Image(); im.src = u; return im; });
+}
+}
+var p;
+if (scrollMode) {
+var r = track.getBoundingClientRect();
+p = -r.top / Math.max(1, th - sh);
+} else {
+p = (((performance.now() - this.t0) / 18000) % 1.2);
+}
+p = Math.max(0, Math.min(1, p));
+this.sp += (p - this.sp) * (scrollMode ? 0.16 : 1);
+if (Math.abs(p - this.sp) < 0.0005) this.sp = p;
+var f = Math.round(this.sp * (this.total - 1));
+if (f !== this.cur) { this.cur = f; this.show(f); }
+var cuts = [0, 0.1, 0.3, 0.48, 0.64, 0.84];
+var s = 0;
+for (var i = 0; i < cuts.length; i++) { if (this.sp >= cuts[i]) s = i; }
+if (s !== this.scene || !this.inited) {
+this.inited = true;
+this.scene = s;
+for (var k = 0; k < cuts.length; k++) {
+var el = d.getElementById('lr-sc' + k);
+if (!el) continue;
+el.style.opacity = k === s ? '1' : '0';
+el.style.transform = k === s ? 'translateY(0)' : 'translateY(18px)';
+el.style.pointerEvents = k === s ? 'auto' : 'none';
+}
+}
+var bar = d.getElementById('lr-bar');
+if (bar) bar.style.transform = 'scaleY(' + this.sp.toFixed(4) + ')';
+var hint = d.getElementById('lr-hint');
+if (hint) hint.style.opacity = (scrollMode && this.sp < 0.04) ? '1' : '0';
+if (scrollMode && !this.fxDead) { try { this.effects(d, track, ih, vw); } catch (err2) { this.fxDead = true; this.showAll(d); } }
+}
+showAll(d) {
+var all = d.querySelectorAll('[data-lr]');
+for (var i = 0; i < all.length; i++) { all[i].style.opacity = '1'; all[i].style.transform = 'none'; }
+var cs = d.querySelectorAll('[data-lr-count]');
+for (var j = 0; j < cs.length; j++) { cs[j].textContent = cs[j].getAttribute('data-lr-count'); }
+}
+effects(d, track, ih, vw) {
+var self = this;
+var still = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+if (!this.fx) {
+this.fx = true;
+this.rev = Array.prototype.slice.call(d.querySelectorAll('[data-lr]'));
+this.par = Array.prototype.slice.call(d.querySelectorAll('[data-lr-par]'));
+this.sl = Array.prototype.slice.call(d.querySelectorAll('[data-lr-slide]'));
+this.cn = Array.prototype.slice.call(d.querySelectorAll('[data-lr-count]'));
+if (!still) {
+this.rev.forEach(function (el) {
+var dl = parseInt(el.getAttribute('data-lr-delay') || '0', 10);
+el.style.opacity = '0';
+el.style.transform = 'translateY(44px)';
+el.style.transition = 'opacity 1s ease ' + dl + 'ms, transform 1.2s cubic-bezier(0.2, 0.7, 0.1, 1) ' + dl + 'ms';
+});
+this.cn.forEach(function (el) { el.textContent = '0'; });
+}
+}
+var now = performance.now();
+if (!still) {
+for (var i = 0; i < this.rev.length; i++) {
+var el = this.rev[i];
+if (el._on) continue;
+var r = el.getBoundingClientRect();
+if (r.top < ih * 0.9 && r.bottom > -ih) {
+el._on = true;
+el.style.opacity = '1';
+el.style.transform = 'translateY(0)';
+}
+}
+for (var j = 0; j < this.cn.length; j++) {
+var c = this.cn[j];
+if (c._done) continue;
+var cr = c.getBoundingClientRect();
+if (!c._t && cr.top < ih * 0.88 && cr.bottom > 0) c._t = now;
+if (c._t) {
+var q = Math.min(1, (now - c._t) / 1800);
+var e2 = 1 - Math.pow(1 - q, 3);
+c.textContent = String(Math.round(e2 * parseInt(c.getAttribute('data-lr-count'), 10)));
+if (q >= 1) c._done = true;
+}
+}
+for (var k = 0; k < this.par.length; k++) {
+var pe = this.par[k];
+var pr = pe.parentElement.getBoundingClientRect();
+if (pr.bottom < -200 || pr.top > ih + 200) continue;
+var off = (pr.top + pr.height / 2 - ih / 2) * parseFloat(pe.getAttribute('data-lr-par'));
+pe.style.transform = 'translateY(' + off.toFixed(1) + 'px) scale(1.12)';
+}
+for (var m = 0; m < this.sl.length; m++) {
+var se = this.sl[m];
+var sr = se.parentElement.getBoundingClientRect();
+if (sr.bottom < -200 || sr.top > ih + 200) continue;
+var pg = (ih - sr.top) / (ih + sr.height);
+var room = Math.max(0, se.scrollWidth - vw);
+se.style.transform = 'translateX(' + (-(room + vw * 0.25) * pg + vw * 0.12).toFixed(1) + 'px)';
+}
+}
+var tr = track.getBoundingClientRect();
+var past = tr.bottom < 60;
+var top = d.getElementById('lr-top');
+if (top) {
+top.style.opacity = past ? '1' : '0';
+top.style.transform = past ? 'translateY(0)' : 'translateY(-100%)';
+top.style.pointerEvents = past ? 'auto' : 'none';
+}
+var bg = d.getElementById('lr-bg');
+if (bg && !still) {
+var docH = Math.max(1, d.documentElement.scrollHeight - ih);
+var fr = Math.max(0, Math.min(1, -tr.top / docH));
+bg.style.transform = 'translateY(' + (-fr * 14).toFixed(2) + '%)';
+}
+var gl = d.getElementById('lr-glow');
+if (gl && !still && this.mx > -900) {
+gl.style.opacity = past ? '1' : '0';
+gl.style.transform = 'translate(' + this.mx + 'px,' + this.my + 'px)';
+}
+}
+show(f) {
+var d = document;
+var sheet = Math.floor(f / 9);
+var cell = f % 9;
+var pos = ((cell % 3) * 50) + '% ' + (Math.floor(cell / 3) * 50) + '%';
+var a = this.active;
+if (this.sheets[a] !== sheet) {
+var o = 1 - a;
+var lo = d.getElementById('lr-l' + o);
+var la = d.getElementById('lr-l' + a);
+if (!lo || !la) return;
+lo.className = 'lr-film lr-' + this.set + sheet;
+lo.style.backgroundPosition = pos;
+lo.style.zIndex = '2';
+la.style.zIndex = '1';
+this.sheets[o] = sheet;
+this.active = o;
+} else {
+var l = d.getElementById('lr-l' + a);
+if (l) l.style.backgroundPosition = pos;
+}
+}
+renderVals() {
+return { accent: this.props.accent ?? '#C8B17A', move: this.move };
+}
+}
+new LantaPage({}).componentDidMount();
+</script>
+</body>
+</html>
